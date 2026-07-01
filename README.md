@@ -34,6 +34,8 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 
 ![Clima](images/clima.png)
 
+---
+
 * **Posibles errores**: 
   * Fallo en la conexión de red (RequestException) si los servidores de Open-Meteo están caídos o no hay acceso a internet.
   * Retorno de valor nulo si el usuario escribe incorrectamente el nombre de la ciudad o ingresa caracteres especiales no reconocidos por la API de geocodificación.
@@ -43,20 +45,28 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 
 ![Causas](images/causas.png)
 
+---
+
 ### ?consejo
 * **Descripción**: Selecciona un consejo ambiental al azar desde una lista interna, lo envía en un formato visual estructurado e incrementa el balance del usuario en 5 puntos ecológicos.
 
 ![Consejos](images/consejos.png)
+
+---
 
 ### ?beneficio
 * **Descripción**: Entrega un beneficio aleatorio derivado de la conservación ambiental y abona 5 puntos ecológicos al registro del usuario que invoca el comando.
 
 ![Beneficio](images/beneficio.png)
 
+---
+
 ### ?idea <propuesta>
 * **Descripción**: Recibe una propuesta ecológica escrita por el usuario, la concatena dentro del archivo de texto "ideas.txt" para su posterior revisión y premia la acción con 10 puntos ecológicos.
 
 ![Idea](images/idea.png)
+
+---
 
 * **Posibles errores**: 
   * Excepción de comando si el usuario no introduce ningún argumento después de invocar la función.
@@ -66,12 +76,16 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 
 ![Ideas](images/ideas.png)
 
+---
+
 * **Posibles errores**: Si el archivo acumulado de propuestas supera el límite físico de 2000 caracteres por mensaje impuesto por Discord, el bot fallará al intentar enviar un mensaje demasiado extenso.
 
 ### ?nasa
 * **Descripción**: Conecta con la API de la NASA para extraer la imagen astronómica del día y su respectiva descripción técnica.
 
 ![NASA](images/nasa.png)
+
+---
 
 * **Posibles errores**: 
   * Error de autenticación (HTTP 403) si la variable de entorno "NASA_API_KEY" no está configurada correctamente en el archivo ".env" o ha expirado.
@@ -82,15 +96,21 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 
 ![Puntos](images/puntos.png)
 
+---
+
 ### ?ranking
 * **Descripción**: Carga el archivo de puntos, ordena los registros de mayor a menor y genera una lista con las diez mejores puntuaciones del servidor.
 
-* ![Ranking](images/ranking.png)
+![Ranking](images/ranking.png)
+
+---
 
 ### ?voz
 * **Descripción**: Utiliza la librería gTTS para transformar un consejo de texto en un archivo de audio MP3, lo envía al canal de Discord y procede a eliminar el archivo temporal del almacenamiento local. Otorga 5 puntos ecológicos.
 
 ![Voz](images/voz.png)
+
+---
 
 * **Posibles errores**: 
   * Fallo por tiempo de espera si los servidores de Google TTS no responden a la solicitud de conversión de voz.
@@ -99,6 +119,8 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 * **Descripción**: Descarga una imagen adjuntada por el usuario y la procesa mediante un modelo de inteligencia artificial de Keras para clasificar el tipo de clase y su porcentaje de confianza.
 
 ![Analizar](images/analizar.png)
+
+---
 
 * **Posibles errores**: 
   * Error de índice si el usuario ejecuta el comando sin adjuntar una imagen.
