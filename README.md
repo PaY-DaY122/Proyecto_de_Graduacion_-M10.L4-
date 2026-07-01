@@ -50,7 +50,7 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 ### ?consejo
 * **Descripción**: Selecciona un consejo ambiental al azar desde una lista interna, lo envía en un formato visual estructurado e incrementa el balance del usuario en 5 puntos ecológicos.
 
-![Consejos](images/consejos.png)
+![Consejo](images/consejo.png)
 
 ---
 
