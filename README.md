@@ -25,8 +25,6 @@ Aplicar conocimientos de programación para desarrollar un bot funcional que com
 
 ---
 
-## 
-
 ## Guía de Comandos y Posibles Errores
 
 A continuación se detallan los comandos integrados en el sistema junto con una breve descripción de su comportamiento y los fallos lógicos o técnicos que podrían experimentar durante su ejecución.
@@ -34,7 +32,7 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 ### ?clima <ciudad>
 * **Descripción**: Obtiene las coordenadas de la ciudad indicada y despliega datos meteorológicos actuales (temperatura, humedad, viento) para concientizar sobre las variaciones del clima local mediante la API Open-Meteo.
 
-* ![Clima](images/clima.png)
+![Clima](images/clima.png)
 
 * **Posibles errores**: 
   * Fallo en la conexión de red (RequestException) si los servidores de Open-Meteo están caídos o no hay acceso a internet.
