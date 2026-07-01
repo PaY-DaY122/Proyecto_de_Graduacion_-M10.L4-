@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+gtts = "*"
+numpy = "*"
+keras = "*"
+requests = "*"
+pillow = "*"
+python-dotenv = "*"
+tensorflow = "==2.15.0"
+"discord.py" = "*"
+pyttsx3 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
