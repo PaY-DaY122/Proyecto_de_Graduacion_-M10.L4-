@@ -34,11 +34,11 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 
 ![Clima](images/clima.png)
 
----
-
 * **Posibles errores**: 
   * Fallo en la conexión de red (RequestException) si los servidores de Open-Meteo están caídos o no hay acceso a internet.
   * Retorno de valor nulo si el usuario escribe incorrectamente el nombre de la ciudad o ingresa caracteres especiales no reconocidos por la API de geocodificación.
+
+---
 
 ### ?causas
 * **Descripción**: Muestra un mensaje estructurado con las principales causas del impacto ambiental negativo a nivel industrial, energético y de transporte.
@@ -66,30 +66,30 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 
 ![Idea](images/idea.png)
 
----
-
 * **Posibles errores**: 
   * Excepción de comando si el usuario no introduce ningún argumento después de invocar la función.
+
+---
 
 ### ?ideas
 * **Descripción**: Lee y expone en el canal de texto todas las ideas y propuestas almacenadas previamente en el archivo "ideas.txt".
 
 ![Ideas](images/ideas.png)
 
----
-
 * **Posibles errores**: Si el archivo acumulado de propuestas supera el límite físico de 2000 caracteres por mensaje impuesto por Discord, el bot fallará al intentar enviar un mensaje demasiado extenso.
+
+---
 
 ### ?nasa
 * **Descripción**: Conecta con la API de la NASA para extraer la imagen astronómica del día y su respectiva descripción técnica.
 
 ![NASA](images/nasa.png)
 
----
-
 * **Posibles errores**: 
   * Error de autenticación (HTTP 403) si la variable de entorno "NASA_API_KEY" no está configurada correctamente en el archivo ".env" o ha expirado.
   * Error de visualización si el tipo de medio retornado por la NASA para ese día es un video en lugar de una imagen.
+
+---
 
 ### ?puntos
 * **Descripción**: Verifica y despliega la cantidad exacta de puntos ecológicos acumulados por el usuario de manera individual.
@@ -110,21 +110,21 @@ A continuación se detallan los comandos integrados en el sistema junto con una 
 
 ![Voz](images/voz.png)
 
----
-
 * **Posibles errores**: 
   * Fallo por tiempo de espera si los servidores de Google TTS no responden a la solicitud de conversión de voz.
+
+---
 
 ### ?analizar
 * **Descripción**: Descarga una imagen adjuntada por el usuario y la procesa mediante un modelo de inteligencia artificial de Keras para clasificar el tipo de clase y su porcentaje de confianza.
 
 ![Analizar](images/analizar.png)
 
----
-
 * **Posibles errores**: 
   * Error de índice si el usuario ejecuta el comando sin adjuntar una imagen.
   * Error de manipulación de imagen si el archivo adjunto está corrupto o no puede ser convertido al formato RGB por la librería PIL.
+
+---
 
 ### ?help
 * **Descripción**: Despliega un menú personalizado que describe detalladamente la sintaxis y función de cada comando ecológico disponible, reemplazando la asistencia por defecto de Discord.py.
